@@ -47,8 +47,6 @@ try:
         confirm_delete.click()
         count += 1
 
-        wait.until(EC.presence_of_element_located((By.XPATH, "//table")))
-
     print(f"All done! Successfully deleted {count} documents.")
 
 except TimeoutException as e:
